@@ -12,6 +12,8 @@ namespace WindowsFormsApp2
 {
     public partial class mainFrm : Form
     {
+        public Screen[] availableScreens = Screen.AllScreens;
+        public int targetScreenIndex = 0;
         public mainFrm()
         {
             InitializeComponent();
@@ -25,6 +27,21 @@ namespace WindowsFormsApp2
         private void hideBtn_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void switchBtn_Click(object sender, EventArgs e)
+        {
+            if (this.targetScreenIndex == this.availableScreens.Length - 1)
+            {
+                this.targetScreenIndex = 0;
+            }
+            else
+            {
+                this.targetScreenIndex++;
+            }
+            this.WindowState = System.Windows.Forms.FormWindowState.Normal;
+            this.Location = this.availableScreens[this.targetScreenIndex].Bounds.Location;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
         }
     }
 }
