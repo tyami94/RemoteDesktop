@@ -44,7 +44,7 @@
             this.exitBtn.Location = new System.Drawing.Point(0, 0);
             this.exitBtn.Margin = new System.Windows.Forms.Padding(0);
             this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(160, 600);
+            this.exitBtn.Size = new System.Drawing.Size(100, 200);
             this.exitBtn.TabIndex = 0;
             this.exitBtn.Text = "Exit";
             this.exitBtn.UseVisualStyleBackColor = false;
@@ -59,10 +59,10 @@
             this.hideBtn.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.hideBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hideBtn.ForeColor = System.Drawing.Color.White;
-            this.hideBtn.Location = new System.Drawing.Point(160, 0);
+            this.hideBtn.Location = new System.Drawing.Point(100, 0);
             this.hideBtn.Margin = new System.Windows.Forms.Padding(0);
             this.hideBtn.Name = "hideBtn";
-            this.hideBtn.Size = new System.Drawing.Size(480, 600);
+            this.hideBtn.Size = new System.Drawing.Size(120, 200);
             this.hideBtn.TabIndex = 1;
             this.hideBtn.Text = "Show Desktop";
             this.hideBtn.UseVisualStyleBackColor = false;
@@ -76,27 +76,28 @@
             this.switchBtn.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.switchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.switchBtn.ForeColor = System.Drawing.Color.White;
-            this.switchBtn.Location = new System.Drawing.Point(640, 0);
+            this.switchBtn.Location = new System.Drawing.Point(220, 0);
             this.switchBtn.Margin = new System.Windows.Forms.Padding(0);
             this.switchBtn.Name = "switchBtn";
-            this.switchBtn.Size = new System.Drawing.Size(160, 600);
+            this.switchBtn.Size = new System.Drawing.Size(100, 200);
             this.switchBtn.TabIndex = 2;
             this.switchBtn.Text = "Switch screen";
             this.switchBtn.UseVisualStyleBackColor = false;
-            this.switchBtn.Click += new System.EventHandler(this.button1_Click);
+            this.switchBtn.Click += new System.EventHandler(this.switchBtn_Click);
             // 
             // mainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(800, 600);
+            this.ClientSize = new System.Drawing.Size(320, 200);
             this.Controls.Add(this.switchBtn);
             this.Controls.Add(this.hideBtn);
             this.Controls.Add(this.exitBtn);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MinimumSize = new System.Drawing.Size(800, 600);
+            this.Location = new System.Drawing.Point(20, 20);
+            this.MinimumSize = new System.Drawing.Size(320, 200);
             this.Name = "mainFrm";
             this.Opacity = 0.8D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;

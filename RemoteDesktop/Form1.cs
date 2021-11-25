@@ -29,7 +29,7 @@ namespace WindowsFormsApp2
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void switchBtn_Click(object sender, EventArgs e)
         {
             if (this.targetScreenIndex == this.availableScreens.Length - 1)
             {
